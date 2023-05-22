@@ -1,0 +1,1 @@
+我想你可能需要 [**BERT-Base，Chinese**](https://github.com/google-research/bert/blob/master/multilingual.md) 模型权重文件的下载地址

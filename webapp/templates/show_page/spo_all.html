@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="710f0634174c4f39b0e85bd39b831a37" class="chart-container" style="width:58vw; height:80vh; "></div>
+    <script>
+        var chart_710f0634174c4f39b0e85bd39b831a37 = echarts.init(
+            document.getElementById('710f0634174c4f39b0e85bd39b831a37'), 'white', {renderer: 'canvas'});
+        var option_710f0634174c4f39b0e85bd39b831a37 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "graph",
+            "layout": "force",
+            "symbolSize": 10,
+            "circular": {
+                "rotateLabel": false
+            },
+            "force": {
+                "repulsion": 4000,
+                "gravity": 0.2,
+                "edgeLength": 30,
+                "friction": 0.6,
+                "layoutAnimation": true
+            },
+            "label": {
+                "show": true,
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "roam": true,
+            "draggable": false,
+            "focusNodeAdjacency": true,
+            "data": [
+                {
+                    "name": "A61L",
+                    "fixed": false,
+                    "symbolSize": 60
+                },
+                {
+                    "name": "A61L 31/00",
+                    "fixed": false,
+                    "symbolSize": 60
+                },
+                {
+                    "name": "\u5176\u4ed6\u624b\u672f\u7528\u54c1\u7684\u6750\u6599",
+                    "fixed": false,
+                    "symbolSize": 60
+                },
+                {
+                    "name": "A61L 31/14",
+                    "fixed": false,
+                    "symbolSize": 60
+                },
+                {
+                    "name": "A61L 31/12",
+                    "fixed": false,
+                    "symbolSize": 60
+                },
+                {
+                    "name": "A61L 31/08",
+                    "fixed": false,
+                    "symbolSize": 60
+                },
+                {
+                    "name": "A61L 31/04",
+                    "fixed": false,
+                    "symbolSize": 60
+                },
+                {
+                    "name": "A61L 31/02",
+                    "fixed": false,
+                    "symbolSize": 60
+                }
+            ],
+            "edgeLabel": {
+                "show": true,
+                "position": "middle",
+                "margin": 8,
+                "formatter": "{c}"
+            },
+            "edgeSymbol": [
+                null,
+                null
+            ],
+            "edgeSymbolSize": 10,
+            "links": [
+                {
+                    "source": "A61L",
+                    "target": "A61L 31/00",
+                    "value": "\u5927\u7ec4"
+                },
+                {
+                    "source": "A61L 31/00",
+                    "target": "\u5176\u4ed6\u624b\u672f\u7528\u54c1\u7684\u6750\u6599",
+                    "value": "\u91ca\u4e49"
+                },
+                {
+                    "source": "A61L 31/00",
+                    "target": "A61L 31/14",
+                    "value": "\u5c0f\u7ec4."
+                },
+                {
+                    "source": "A61L 31/00",
+                    "target": "A61L 31/12",
+                    "value": "\u5c0f\u7ec4."
+                },
+                {
+                    "source": "A61L 31/00",
+                    "target": "A61L 31/08",
+                    "value": "\u5c0f\u7ec4."
+                },
+                {
+                    "source": "A61L 31/00",
+                    "target": "A61L 31/04",
+                    "value": "\u5c0f\u7ec4."
+                },
+                {
+                    "source": "A61L 31/00",
+                    "target": "A61L 31/02",
+                    "value": "\u5c0f\u7ec4."
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": [],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "title": [
+        {
+            "show": true,
+            "text": "spo_big",
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ]
+};
+        chart_710f0634174c4f39b0e85bd39b831a37.setOption(option_710f0634174c4f39b0e85bd39b831a37);
+    </script>
+</body>
+</html>

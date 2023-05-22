@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>大知识图谱</title>
+    <link rel="stylesheet" href="../static/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"/>
+    <script src="../static/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="cover-container d-flex p-3 mx-auto flex-column">
+    {% include 'header.html' %}
+    <div class="container-md">
+        <form class="d-flex" role="search" action="/kg_big" method="post">
+            <input class="form-control" type="text" placeholder="输入查询词组……" name="F_word_big" aria-label="F_word_big">
+            <button class="btn btn-outline-success" type="submit">查询</button>
+        </form>
+        <div class="container-md p-3 my-0 border">
+            <div class="row">
+                <div class="container-md col-8" style="height: 80vh">
+                    {% include 'show_page/spo_all.html' %}
+                </div>
+                <div class="container-md col-4 rounded" style="background-color: #F8F8F8;height: 80vh;overflow-y: scroll">
+                    <!--实际应用功能-->
+                    {% include 'other_page/use.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</div>
+</body>
+</html>

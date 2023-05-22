@@ -1,0 +1,34 @@
+<!--根据传入的文件得到结果-->
+<div class="row" style="height: 75vh">
+    <!--带查询的知识图谱-->
+    <div class="col-md-8">
+        <div style="height: 67vh">
+            {% include 'show_page/spo_file.html' %}
+        </div>
+        <div style="height: 8vh">
+            <form class="d-flex" role="search" action="/kg_file" method="post">
+                <input class="form-control" type="text" placeholder="输入过滤词语" name="F_word_file" aria-label="F_word_file">
+                <button class="btn btn-outline-success" type="submit">查询</button>
+            </form>
+        </div>
+    </div>
+    <!--spo三元组列表-->
+    <div class="col-md-4">
+        <div style="height: 75vh;overflow-y: scroll">
+            <table class="table">
+                <tr>
+                    <th>主体</th>
+                    <th>关系</th>
+                    <th>客体</th>
+                </tr>
+                {% for spo in spo_list %}
+                <tr>
+                    {% for t in spo %}
+                    <td>{{ t }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>

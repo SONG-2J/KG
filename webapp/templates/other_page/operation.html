@@ -1,0 +1,29 @@
+<h4>相关设置</h4>
+<div class="mt-2">
+    <h5>模型选择</h5>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="model" id="model_cr" value="model_cr" checked>
+        <label class="form-check-label" for="model_cr">
+            CasRel
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="model" id="model_gp" value="model_gp">
+        <label class="form-check-label" for="model_gp">
+            GlobalPointer
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="model" id="model_other" value="model_other" disabled>
+        <label class="form-check-label" for="model_other">
+            Other
+        </label>
+    </div>
+</div>
+
+<div class="mt-4">
+    <h5>模型比较</h5>
+    <div class="row justify-content-center">
+        {% include 'other_page/line.html' %}
+    </div>
+</div>

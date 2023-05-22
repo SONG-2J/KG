@@ -1,0 +1,38 @@
+<div>
+    <h4>
+        <span class="text-success">{{word_around['word']}}</span>
+        相关专利总结
+    </h4>
+    其释义为：<br>
+    <div class="card text-white bg-success">
+        {% for explain in word_around['explain_list'] %}
+        {{explain}}<br>
+        {% endfor %}
+    </div>
+    其上级专利为：<br>
+    <table class="table rounded text-white bg-success">
+        <tr>
+            <th>专利</th>
+            <th>释义</th>
+        </tr>
+        {% for p in word_around['p_list'] %}
+        <tr>
+            <th>{{p}}</th>
+            <th>{{word_around['p_list'][p]}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+    其子专利为：<br>
+    <table class="table rounded text-white bg-success">
+        <tr>
+            <th>专利</th>
+            <th>释义</th>
+        </tr>
+        {% for kid in word_around['kids_list'] %}
+        <tr>
+            <th>{{kid}}</th>
+            <th>{{word_around['kids_list'][kid]}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
